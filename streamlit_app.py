@@ -28,7 +28,7 @@ my_bar = st.progress(day_progress, text=progress_text)
 while True:
     time.sleep(0.100)
 
-    #st.write(day_end)
+    st.write(day_end)
     #st.write(time.mktime(day_end)-time.mktime(day_start))
 
     #st.write(time.localtime())
