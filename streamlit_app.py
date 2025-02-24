@@ -11,11 +11,11 @@ time.tzset()
 
 progress_text = "Day in progress. Please wait."
 
-day_start = time.struct_time((2025, 2, 21, 
+day_start = time.struct_time((2025, 2, 24, 
                              9, 0, 0, 
                              3, 51, 0))
 
-day_end = time.struct_time((2025, 2, 21, 
+day_end = time.struct_time((2025, 2, 24, 
                            18, 0, 0, 
                            3, 51, 0))
 
