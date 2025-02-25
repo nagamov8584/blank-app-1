@@ -43,7 +43,7 @@ while True:
     #st.write(day_duration)
 
     my_bar.progress(day_progress, text=progress_text)
-    progress_message = st.container():
+    progress_message = st.container()
     progress_message.write("Progress:", day_progress*100, "%")
     #st.write(time.asctime(time.localtime()))
 
