@@ -24,6 +24,7 @@ day_curtime = time.mktime(time.localtime()) - time.mktime(day_start)
 day_progress = day_curtime/day_duration
 
 my_bar = st.progress(day_progress, text=progress_text)
+placeholder = st.empty()
 
 while True:
     time.sleep(0.100)
@@ -44,7 +45,7 @@ while True:
 
     my_bar.progress(day_progress, text=progress_text)
     #with st.empty():
-    placeholder = st.empty()
+    #placeholder = st.empty()
     placeholder.markdown("⏳ Curent progress is:", day_progress*100, "%")
     time.sleep(10)
     #st.write(time.asctime(time.localtime()))
