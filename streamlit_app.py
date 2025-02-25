@@ -43,9 +43,10 @@ while True:
     #st.write(day_duration)
 
     my_bar.progress(day_progress, text=progress_text)
-    with st.empty():
-      st.write("⏳ Curent progress is:", day_progress*100, "%")
-      time.sleep(10)
+    #with st.empty():
+    placeholder = st.empty()
+    placeholder.markdown("⏳ Curent progress is:", day_progress*100, "%")
+    time.sleep(10)
     #st.write(time.asctime(time.localtime()))
 
 
