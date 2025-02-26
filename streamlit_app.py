@@ -47,7 +47,7 @@ while True:
     #with st.empty():
     #placeholder = st.empty()
     placeholder.write(f"Curent progress is: {day_progress*100} %")
-    time.sleep(10)
+    time.sleep(1)
     #st.write(time.asctime(time.localtime()))
 
 
