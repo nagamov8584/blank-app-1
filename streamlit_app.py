@@ -36,7 +36,7 @@ while True:
     #day_updtime = (time.mktime(time.localtime()) - day_curtime)/day_duration
 
     day_curtime = time.mktime(time.localtime()) - time.mktime(day_start)
-    day_progress = day_curtime/day_duration
+    day_progress = round(day_curtime/day_duration, 5)
 
     #st.write(day_curtime)
     #st.write(day_updtime)
