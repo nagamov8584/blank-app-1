@@ -46,7 +46,7 @@ while True:
     my_bar.progress(day_progress, text=progress_text)
     #with st.empty():
     #placeholder = st.empty()
-    placeholder.write(f"Curent progress is: {day_progress*100} %")
+    placeholder.write(f"Curent progress is: {round(day_progress*100, 3)} %")
     time.sleep(1)
     #st.write(time.asctime(time.localtime()))
 
