@@ -11,11 +11,11 @@ time.tzset()
 
 progress_text = "Day in progress. Please wait."
 
-day_start = time.struct_time((2025, 3, 3, 
+day_start = time.struct_time((2025, 3, 4, 
                              9, 0, 0, 
                              3, 51, 0))
 
-day_end = time.struct_time((2025, 3, 3, 
+day_end = time.struct_time((2025, 3, 4, 
                            18, 0, 0, 
                            3, 51, 0))
 
@@ -25,6 +25,8 @@ day_progress = day_curtime/day_duration
 
 my_bar = st.progress(day_progress, text=progress_text)
 placeholder = st.empty()
+
+st.write(time.localtime())
 
 while True:
     time.sleep(0.100)
